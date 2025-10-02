@@ -1,11 +1,24 @@
----
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jan Jireš</title>
+  <link rel="stylesheet" href="/css/template.css" />
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
----
 
-<Layout>
-	<Welcome />
-</Layout>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Hey! Welcome at my page!</h1>
+	<h2>I'm gonna share my study journey here with you! Check out the Blog for newest developments!</h2>
+	<p>Still new to this, so please have patience.</p>
+	<iframe src="/under-construction-template-master/underconstruction.html" width="100%" height="600"></iframe>
+  </main>
+</body>
+</html>
