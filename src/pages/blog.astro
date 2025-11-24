@@ -1,31 +1,25 @@
 ---
 // src/pages/blog.astro
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ISKM61 Weekly Reflections</title>
-</head>
-<body>
-  <div class = ></div>
-  <header>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/blog">Blog</a>
-    </nav>
-  </header>
-  <main>
-    <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-      <div>
-        <h1 class="text-gray-500 dark:text-gray-400">Welcome to my blog!</h1>
-      </div>
+<header>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/blog">Blog</a>
+  </nav>
+</header>
+<main>
+  <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+    <div>
+      <h1 class="text-gray-500 dark:text-gray-400">Welcome to my blog!</h1>
     </div>
-    <h1>Welcome to my blog!</h1>
-    <h2>Navigation to my reflections as I'm going through my studies:</h2>
-    <ul><li><a href="/ISKM61/">ISKM61 - MOOC Learning</a></li></ul>
-  </main>
-</body>
-</html>
+  </div>
+  <h1>Welcome to my blog!</h1>
+  <h2>Navigation to my reflections as I'm going through my studies:</h2>
+  <ul>
+    <li><a href="/ISKM61/">ISKM61 - MOOC Learning</a></li>
+  </ul>
+</main>
+
+<style is:global>
+  @import "tailwindcss";
+</style>
