@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+  --color-charcoal: rgb(53, 53, 53);
+  --color-graytext: rgb(217, 217, 217);
+  --color-greenels: rgb(60, 111, 113);
+  --color-blueels: rgb(41, 75, 100);
+}

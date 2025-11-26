@@ -1,26 +1,18 @@
 ---
-// src/pages/blog.astro
+import Layout from '../layouts/Layout.astro';
 ---
-<header>
-  <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-    <nav>
-      <a href="/">Home</a>
-      <a href="/blog">Blog</a>
-    </nav>
-  </div>
-</header>
-<main>
-  <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-    <div>
-      <h1 class="text-gray-500 dark:text-gray-400">Welcome to my blog!</h1>
+<Layout title="Blog">
+  <header>
+    <div class="mx-auto flex max-w-45 items-center rounded-xl bg-charcoal p-6 shadow-lg outline outline-greenels dark:bg-greenels dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+      <nav>
+        <a class="hover:text-blueels" href="/">Home</a>
+        <a class="hover:text-blueels" href="/blog">Blog</a>
+      </nav>
     </div>
-  </div>
-  <h2>Navigation to my reflections as I'm going through my studies:</h2>
-  <ul>
-    <li><a href="/ISKM61/">ISKM61 - MOOC Learning</a></li>
-  </ul>
-</main>
-
-<style is:global>
-  @import "tailwindcss";
-</style>
+  </header>
+  <main>
+    <h1 class="mx-auto flex text-6xl p-6">Welcome to my blog!</h1>
+    <h2 class="p-6">Navigation to my reflections as I'm going through my studies:</h2>
+    <a href="/ISKM61/"><button class="cursor-pointer ml-15 bg-greenels items-center rounded-xl p-6 hover:text-blueels">ISKM61 - MOOC Learning</button></a>
+  </main>
+</Layout>
