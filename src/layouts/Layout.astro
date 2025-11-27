@@ -12,7 +12,8 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.png" />
+		<script src="https://cdn.tailwindcss.com"></script>
 		<title>{title}</title>
 	</head>
 	<body class="bg-charcoal text-2xl text-graytext">
@@ -21,5 +22,29 @@ const { title } = Astro.props;
 			</h1>
 		</main>
 		<slot />
-	</body>
+	
+		<button id="to-top-button" title="Go To Top"
+    	  class="cursor-pointer hidden fixed z-90 bottom-8 right-8 border-0 w-24 h-24 rounded-full drop-shadow-md bg-blueels text-graytext text-5xl font-extrabold">&uarr;</button>
+
+    	<!-- Javascript code -->
+		<script>
+		  const toTopButton = document.getElementById("to-top-button");
+		
+		  if (toTopButton) {
+		    // When the user scrolls down 200px from the top of the document, show the button
+		    window.onscroll = function () {
+		      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+		        toTopButton.classList.remove("hidden");
+		      } else {
+		        toTopButton.classList.add("hidden");
+		      }
+		    }
+		
+		    // When the user clicks on the button, smoothly scroll to the top of the document
+		    toTopButton.addEventListener("click", function() {
+		      window.scrollTo({ top: 0, behavior: 'smooth' });
+		    });
+		  }
+		</script>
+	</body>	
 </html>
