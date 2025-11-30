@@ -1,20 +1,142 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Jan Jireš">
-  <header>
-    <div class="m-auto mx-auto flex max-w-45 items-center rounded-xl bg-charcoal p-6 shadow-lg outline outline-greenels dark:bg-greenels dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-      <nav>
-        <a href="/">Home</a>
-        <a href="/blog">Blog</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <h1 class="ml-15 flex max-w-2xl text-6xl p-6">Welcome at my page!</h1>
-  <h2 class= "ml-15 p-6">I'm gonna share my study journey here with you! Check out the Blog for newest developments!</h2>
-  <p class= "ml-15 text-xl p-6">Still new to this, so please have patience.</p>
-  <iframe src="/under-construction-template-master/underconstruction.html" width="100%" height="650"></iframe>
-  </main>
-</Layout>
 
+<Layout title="Jan Jireš">
+  <div class="space-y-20 px-6 py-16">
+    <!-- SVG Background Pattern (reusable) -->
+    <svg class="absolute top-0 right-0 opacity-10 w-96 h-96 pointer-events-none" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="1" class="text-greenels"/>
+      <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="1" class="text-blueels"/>
+      <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="1" class="text-greenels"/>
+      <path d="M100,20 L100,180 M20,100 L180,100" stroke="currentColor" stroke-width="0.5" class="text-graytext/30"/>
+    </svg>
+
+    <!-- Hero Section -->
+    <section class="max-w-4xl mx-auto text-center space-y-6 relative z-10">
+      <div class="space-y-4">
+        <h1 class="text-6xl md:text-7xl font-bold text-graytext leading-tight">
+          Welcome
+        </h1>
+        <p class="text-xl md:text-2xl text-graytext/80">
+          Explore ideas at the intersection of <span class="text-greenels font-semibold">philosophy</span>, <span class="text-blueels font-semibold">technology</span>, and <span class="text-greenels font-semibold">creativity</span>.
+        </p>
+      </div>
+
+      <p class="text-base text-graytext/70 max-w-2xl mx-auto leading-relaxed">
+        I'm sharing my journey through research, development, and learning. This space is dedicated to exploring digital humanities, information ethics, and the thoughtful intersection of technology and human values.
+      </p>
+    </section>
+
+    <!-- Three Pillars Section (Alternating) -->
+    <section class="max-w-5xl mx-auto space-y-16">
+      <!-- Think (LEFT) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-4 order-2 md:order-1">
+          <h2 class="text-4xl font-semibold text-graytext">Think</h2>
+          <p class="text-base text-graytext/80 leading-relaxed">
+            Dive into explorations of information philosophy, digital ethics, and the critical questions shaping our technological landscape. Read about research, theories, and thoughtful analysis.
+          </p>
+          <a href="/blog" class="inline-block text-greenels hover:text-blueels font-semibold transition">
+            Explore Ideas →
+          </a>
+        </div>
+        <div class="bg-linear-to-br from-greenels/10 to-blueels/10 rounded-xl h-64 flex items-center justify-center order-1 md:order-2 border border-greenels/20">
+          <svg class="w-32 h-32 text-greenels/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+            <circle cx="12" cy="8" r="1" fill="currentColor"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Create (RIGHT) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-linear-to-br from-blueels/10 to-greenels/10 rounded-xl h-64 flex items-center justify-center border border-blueels/20">
+          <svg class="w-32 h-32 text-blueels/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <path d="M12 3v18M3 12h18"/>
+            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+            <circle cx="6" cy="6" r="1" fill="currentColor"/>
+            <circle cx="18" cy="6" r="1" fill="currentColor"/>
+            <circle cx="6" cy="18" r="1" fill="currentColor"/>
+            <circle cx="18" cy="18" r="1" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="space-y-4">
+          <h2 class="text-4xl font-semibold text-graytext">Create</h2>
+          <p class="text-base text-graytext/80 leading-relaxed">
+            Building web applications, processing data, and developing tools that bridge the gap between human creativity and technological possibility. Check out my creative corner for experiments and explorations.
+          </p>
+          <a href="/about" class="inline-block text-blueels hover:text-greenels font-semibold transition">
+            See my work →
+          </a>
+        </div>
+      </div>
+
+      <!-- Browse (LEFT) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-4 order-2 md:order-1">
+          <h2 class="text-4xl font-semibold text-graytext">Browse</h2>
+          <p class="text-base text-graytext/80 leading-relaxed">
+            Wander through my collection of reflections, projects, and insights. Everything here documents my learning journey—from academic pursuits to personal interests and creative endeavors.
+          </p>
+          <a href="/blog" class="inline-block text-greenels hover:text-blueels font-semibold transition">
+            Start browsing →
+          </a>
+        </div>
+        <div class="bg-linear-to-br from-greenels/10 to-blueels/10 rounded-xl h-64 flex items-center justify-center order-1 md:order-2 border border-greenels/20">
+          <svg class="w-32 h-32 text-greenels/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <rect x="4" y="4" width="16" height="16" rx="2"/>
+            <path d="M4 12h16M4 8h16M4 16h16"/>
+            <circle cx="8" cy="6" r="0.5" fill="currentColor"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="max-w-4xl mx-auto space-y-6 bg-blueels/5 rounded-xl p-8 border border-blueels/20">
+      <h2 class="text-3xl font-semibold text-graytext">Latest Reflections</h2>
+      <p class="text-base text-graytext/80">
+        I'm documenting my journey through ISKM61 (MOOC Learning), data science coursework, and explorations in AI ethics. Currently in the early stages—stay tuned for more content!
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/blog" class="p-4 rounded-lg bg-charcoal border border-greenels/30 hover:border-greenels transition">
+          <p class="text-sm text-graytext/70">📚 Study Journey</p>
+          <p class="text-lg font-semibold text-graytext mt-2">Read the blog</p>
+        </a>
+        <a href="/about" class="p-4 rounded-lg bg-charcoal border border-blueels/30 hover:border-blueels transition">
+          <p class="text-sm text-graytext/70">✨ About Me</p>
+          <p class="text-lg font-semibold text-graytext mt-2">Learn more about me</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="max-w-3xl mx-auto text-center space-y-6">
+      <h2 class="text-3xl font-semibold text-graytext">Let's Connect</h2>
+      <p class="text-base text-graytext/80">
+        Have thoughts to share? Want to collaborate? Reach out—I'd love to hear from you.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a
+          href="mailto:you@example.com"
+          class="bg-greenels text-charcoal font-semibold px-6 py-3 rounded-lg hover:bg-blueels transition"
+        >
+          Send me an email
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jan-jires"
+          class="border-2 border-blueels text-graytext font-semibold px-6 py-3 rounded-lg hover:bg-blueels/10 transition"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer hint -->
+    <section class="text-center text-xs text-graytext/50 pt-8">
+      <p>🌱 This site is still growing. Thanks for your patience!</p>
+    </section>
+  </div>
+</Layout>

@@ -1,0 +1,268 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Me">
+  <div class="space-y-20 px-6 py-16">
+    <!-- Hero Section (Centered) -->
+    <section class="text-center max-w-2xl mx-auto">
+      <h1 class="text-6xl font-bold text-graytext mb-4">About Me</h1>
+      <p class="text-base text-graytext/80 leading-relaxed">
+        I'm an information science student, process analyst, and a developer exploring the intersection of digital humanities, information philosophy, and technology. Currently studying Information Science at Masaryk University Brno, with a passion for AI ethics, data science and data visualization, UI and UX analysis and building meaningful digital experiences.
+      </p>
+    </section>
+
+    <!-- Professional Photo + Bio (LEFT photo, RIGHT text) -->
+    <section class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Photo Left -->
+        <div class="rounded-xl overflow-hidden border-2 border-greenels/40 hover:border-blueels transition">
+          <img 
+            src="/img/mugshot.jpg" 
+            alt="Professional photo" 
+            class="w-full h-96 object-cover"
+          />
+        </div>
+        <!-- Text Right -->
+        <div class="space-y-4">
+          <h2 class="text-4xl font-semibold text-graytext">Jan Jireš</h2>
+          <p class="text-base text-graytext/80 leading-relaxed">
+            Information Science student with a passion for understanding how technology shapes knowledge and society. I believe in the power of interdisciplinary thinking—combining philosophy, programming, and critical inquiry to solve complex problems.
+          </p>
+          <p class="text-base text-graytext/80 leading-relaxed">
+            When I'm not researching or coding, you'll find me exploring music, sports, tea ceremonies, and creative projects that keep me inspired and grounded.
+          </p>
+          <div class="pt-4 flex gap-4">
+            <a href="#" class="text-blueels hover:text-greenels transition font-semibold">View CV →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education (RIGHT text, LEFT accent) -->
+    <section class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <!-- Left Accent -->
+        <div class="hidden md:flex flex-col gap-4 py-8">
+          <div class="hidden h-32 bg-greenels/10 rounded-lg border-l-4 border-greenels"></div>
+          <div class="hidden h-32 bg-blueels/10 rounded-lg border-l-4 border-blueels"></div>
+        </div>
+        <!-- Text Right -->
+        <div class="space-y-4">
+          <h2 class="text-4xl font-semibold text-graytext">Education</h2>
+          <div class="space-y-4">
+            <div class="bg-greenels/5 border-l-4 border-greenels rounded-lg p-6 hover:bg-greenels/10 transition">
+              <h3 class="text-lg font-semibold text-graytext">Bachelor's in Information Science</h3>
+              <p class="text-sm text-graytext/70 mt-1">Masaryk University Brno | 2022 – 2025</p>
+            </div>
+            <div class="bg-greenels/5 border-l-4 border-greenels rounded-lg p-6 hover:bg-greenels/10 transition">
+              <h3 class="text-lg font-semibold text-graytext">Building AI Certificate</h3>
+              <p class="text-sm text-graytext/70 mt-1">University of Helsinki & Minnalearn | 2024</p>
+            </div>
+            <div class="bg-greenels/5 border-l-4 border-greenels rounded-lg p-6 hover:bg-greenels/10 transition">
+              <h3 class="text-lg font-semibold text-graytext">AI & Machine Learning Certificate</h3>
+              <p class="text-sm text-graytext/70 mt-1">University of Helsinki & Minnalearn | 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills (LEFT grid, RIGHT accent) -->
+    <section class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Left Grid -->
+        <div class="space-y-4">
+          <h2 class="text-4xl font-semibold text-graytext mb-6">Skills</h2>
+          <div class="grid grid-cols-1 gap-4">
+            <div class="bg-blueels/5 rounded-lg p-4 border border-blueels/20 hover:bg-blueels/10 transition">
+              <p class="text-sm font-semibold text-graytext uppercase">Programming</p>
+              <p class="text-sm text-graytext/70 mt-2">Python, CAT Tools, scripting</p>
+            </div>
+            <div class="bg-blueels/5 rounded-lg p-4 border border-blueels/20 hover:bg-blueels/10 transition">
+              <p class="text-sm font-semibold text-graytext uppercase">AI & ML</p>
+              <p class="text-sm text-graytext/70 mt-2">Building AI, Ethics of AI, Machine Learning</p>
+            </div>
+            <div class="bg-blueels/5 rounded-lg p-4 border border-blueels/20 hover:bg-blueels/10 transition">
+              <p class="text-sm font-semibold text-graytext uppercase">Cloud & Tools</p>
+              <p class="text-sm text-graytext/70 mt-2">Microsoft Azure, Pandas, Microsoft Office</p>
+            </div>
+            <div class="bg-blueels/5 rounded-lg p-4 border border-blueels/20 hover:bg-blueels/10 transition">
+              <p class="text-sm font-semibold text-graytext uppercase">Specialization</p>
+              <p class="text-sm text-graytext/70 mt-2">Localization, Translation, Information Ethics</p>
+            </div>
+          </div>
+        </div>
+        <!-- Right Accent -->
+        <div class="hidden md:flex items-center justify-center py-8">
+          <div class="w-full h-80 bg-linear-to-br from-greenels/10 to-blueels/10 rounded-xl border-2 border-greenels/20"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Interests (Centered Grid) -->
+    <section class="max-w-4xl mx-auto space-y-6">
+      <h2 class="text-4xl font-semibold text-graytext text-center">Professional Interests</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-greenels/10 border-l-4 border-greenels rounded-lg p-6 hover:bg-greenels/20 transition">
+          <h3 class="text-lg font-semibold text-graytext mb-2">🎓 Digital Humanities</h3>
+          <p class="text-sm text-graytext/80">Computational methods in philosophy and cultural studies.</p>
+        </div>
+        <div class="bg-greenels/10 border-l-4 border-greenels rounded-lg p-6 hover:bg-greenels/20 transition">
+          <h3 class="text-lg font-semibold text-graytext mb-2">⚖️ Information Ethics</h3>
+          <p class="text-sm text-graytext/80">Ethical implications of technology and AI systems.</p>
+        </div>
+        <div class="bg-greenels/10 border-l-4 border-greenels rounded-lg p-6 hover:bg-greenels/20 transition">
+          <h3 class="text-lg font-semibold text-graytext mb-2">🤖 AI Ethics</h3>
+          <p class="text-sm text-graytext/80">Building responsible and ethical AI solutions.</p>
+        </div>
+        <div class="bg-greenels/10 border-l-4 border-greenels rounded-lg p-6 hover:bg-greenels/20 transition">
+          <h3 class="text-lg font-semibold text-graytext mb-2">💻 Web Development</h3>
+          <p class="text-sm text-graytext/80">Accessible and performant web applications.</p>
+        </div>
+        <div class="bg-greenels/10 border-l-4 border-greenels rounded-lg p-6 hover:bg-greenels/20 transition">
+          <h3 class="text-lg font-semibold text-graytext mb-2">🌍 Localization</h3>
+          <p class="text-sm text-graytext/80">Expert in localization for diverse communities.</p>
+        </div>
+        <div class="bg-greenels/10 border-l-4 border-greenels rounded-lg p-6 hover:bg-greenels/20 transition">
+          <h3 class="text-lg font-semibold text-graytext mb-2">📊 Machine Learning</h3>
+          <p class="text-sm text-graytext/80">Applying ML models to real-world problems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Interests: Alternating Layout -->
+    <section class="max-w-5xl mx-auto space-y-12">
+      <div class="text-center space-y-4">
+        <h2 class="text-4xl font-semibold text-graytext">Beyond Work</h2>
+        <p class="text-base text-graytext/80 max-w-2xl mx-auto">
+          When I'm not working, I explore diverse passions that keep me balanced and inspired.
+        </p>
+      </div>
+
+      <!-- Volleyball (LEFT) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="rounded-xl overflow-hidden border-2 border-greenels/40 hover:border-blueels transition">
+          <img 
+            src="/img/volleyball.jpg" 
+            alt="Playing volleyball" 
+            class="w-full h-64 object-cover"
+          />
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-3xl font-semibold text-graytext">🏐 Volleyball</h3>
+          <p class="text-base text-graytext/80 leading-relaxed">
+            Team sport, movement, and outdoor activities. Volleyball keeps me active, connected to others, and reminds me of the importance of collaboration and coordination.
+          </p>
+        </div>
+      </div>
+
+      <!-- Music (RIGHT) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:order-last">
+        <div class="space-y-3 md:order-2">
+          <h3 class="text-3xl font-semibold text-graytext">🎵 Music</h3>
+          <p class="text-base text-graytext/80 leading-relaxed">
+            Guitar and Saxophone – my primary outlets for artistic expression. Music allows me to explore emotions and creativity beyond the analytical mindset of coding and research.
+          </p>
+        </div>
+        <div class="rounded-xl overflow-hidden border-2 border-greenels/40 hover:border-blueels transition md:order-1">
+          <img 
+            src="/img/music.jpg" 
+            alt="Playing guitar and saxophone" 
+            class="w-full h-64 object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Tea (LEFT) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="rounded-xl overflow-hidden border-2 border-greenels/40 hover:border-blueels transition">
+          <img 
+            src="/img/tea.jpg" 
+            alt="Ceremonial tea (Gong-fu Cha)" 
+            class="w-full h-64 object-cover"
+          />
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-3xl font-semibold text-graytext">🍵 Gong-fu Cha</h3>
+          <p class="text-base text-graytext/80 leading-relaxed">
+            Ceremonial tea drinking – a practice of mindfulness, ritual, and presence. It teaches patience, attention to detail, and the beauty of slowing down in our fast-paced world.
+          </p>
+        </div>
+      </div>
+
+      <!-- Creative (RIGHT) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:order-last">
+        <div class="space-y-3 md:order-2">
+          <h3 class="text-3xl font-semibold text-graytext">✨ Creating</h3>
+          <p class="text-base text-graytext/80 leading-relaxed">
+            Art, design, and personal creative projects. Creating allows me to experiment with new ideas, express myself visually, and push boundaries across different mediums.
+          </p>
+        </div>
+        <div class="rounded-xl overflow-hidden border-2 border-greenels/40 hover:border-blueels transition md:order-1">
+          <img 
+            src="/img/creative.jpg" 
+            alt="Creative projects" 
+            class="w-full h-64 object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Creative Corner (Centered) -->
+    <section class="max-w-4xl mx-auto space-y-6">
+      <div class="text-center space-y-4">
+        <h2 class="text-4xl font-semibold text-graytext">Creative Corner</h2>
+        <p class="text-base text-graytext/80">
+          A space where I share creative experiments and explorations outside my main work.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-greenels/10 rounded-lg p-6 border border-greenels/20 hover:bg-greenels/20 transition">
+          <h3 class="text-lg font-semibold text-graytext mb-2">🎨 Visual Art</h3>
+          <p class="text-sm text-graytext/80">Digital and traditional art experiments.</p>
+        </div>
+        <div class="bg-greenels/10 rounded-lg p-6 border border-greenels/20 hover:bg-greenels/20 transition">
+          <h3 class="text-lg font-semibold text-graytext mb-2">✍️ Writing</h3>
+          <p class="text-sm text-graytext/80">Reflections, essays, and creative writing.</p>
+        </div>
+        <div class="bg-greenels/10 rounded-lg p-6 border border-greenels/20 hover:bg-greenels/20 transition">
+          <h3 class="text-lg font-semibold text-graytext mb-2">🎵 Music Projects</h3>
+          <p class="text-sm text-graytext/80">Recordings and musical compositions.</p>
+        </div>
+        <div class="bg-greenels/10 rounded-lg p-6 border border-greenels/20 hover:bg-greenels/20 transition">
+          <h3 class="text-lg font-semibold text-graytext mb-2">💡 Side Projects</h3>
+          <p class="text-sm text-graytext/80">Experimental web and software projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section (Centered) -->
+    <section class="max-w-3xl mx-auto text-center space-y-6">
+      <h2 class="text-3xl font-semibold text-graytext">Let's Connect</h2>
+      <p class="text-base text-graytext/80">
+        Interested in collaborating, discussing ideas, or just saying hello?
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a
+          href="mailto:you@example.com"
+          class="bg-greenels text-charcoal font-semibold px-6 py-3 rounded-lg hover:bg-blueels transition"
+        >
+          Send me an email
+        </a>
+        <a
+          href="/blog"
+          class="border-2 border-greenels text-graytext font-semibold px-6 py-3 rounded-lg hover:bg-greenels/10 transition"
+        >
+          Read my blog
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jan-jires"
+          class="border-2 border-blueels text-graytext font-semibold px-6 py-3 rounded-lg hover:bg-blueels/10 transition"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </div>
+</Layout>

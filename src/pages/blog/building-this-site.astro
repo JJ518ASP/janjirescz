@@ -1,0 +1,149 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Building This Site: Learning Astro & Tailwind CSS">
+  <article class="max-w-3xl mx-auto px-6 py-16 space-y-8">
+    <!-- Header -->
+    <header class="space-y-4 border-b border-graytext/20 pb-8">
+      <div class="space-y-2">
+        <span class="text-xs font-semibold text-greenels uppercase tracking-wide">Web Development</span>
+        <h1 class="text-5xl md:text-6xl font-bold text-graytext leading-tight">
+          Building This Site
+        </h1>
+        <p class="text-xl text-graytext/80">
+          Learning Astro & Tailwind CSS to create a minimalistic personal space.
+        </p>
+      </div>
+      <div class="flex gap-6 text-sm text-graytext/60">
+        <time>November 30, 2025</time>
+        <span>8 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="prose prose-invert max-w-none space-y-6 text-graytext/90 leading-relaxed">
+      <section class="space-y-4">
+        <h2 class="text-3xl font-semibold text-graytext">Introduction</h2>
+        <p>
+          After months of learning web development, I finally decided to build a personal website that reflects who I am and what I'm passionate about. This site isn't just a portfolio—it's a space for reflection, documentation, and experimentation with modern web technologies.
+        </p>
+        <p>
+          I chose <strong class="text-blueels">Astro</strong> and <strong class="text-greenels">Tailwind CSS</strong> as my primary tools. Here's why, and what I learned in the process.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-3xl font-semibold text-graytext">Why Astro?</h2>
+        <p>
+          Astro is a modern static site builder that focuses on delivering fast, content-rich websites. What attracted me:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-graytext/80">
+          <li>Minimal JavaScript by default—only sends what's needed to the browser</li>
+          <li>Framework-agnostic—I can use HTML, React, Vue, or other components</li>
+          <li>Excellent developer experience with hot reloading</li>
+          <li>Built-in support for markdown, making blogging intuitive</li>
+          <li>Easy deployment to platforms like GitHub Pages</li>
+        </ul>
+        <p>
+          For a personal site focused on writing and reflection, Astro feels like the right choice. It respects both performance and creative flexibility.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-3xl font-semibold text-graytext">Tailwind CSS: Styling with Purpose</h2>
+        <p>
+          Tailwind CSS is a utility-first CSS framework that lets you build designs directly in your HTML. Coming from traditional CSS, it took a mindset shift, but the benefits are clear:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-graytext/80">
+          <li>Consistency through a design system (spacing, colors, typography)</li>
+          <li>Fast iteration—no context switching between HTML and CSS files</li>
+          <li>Small bundle size—only the classes you use are included</li>
+          <li>Dark mode support built-in</li>
+          <li>Responsive design made simple with mobile-first breakpoints</li>
+        </ul>
+        <p>
+          I created a custom color palette reflecting my design sensibilities: charcoal background, gray text, with teal and blue accents for interactive elements. This consistency carries throughout the entire site.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-3xl font-semibold text-graytext">Key Challenges & Solutions</h2>
+        
+        <h3 class="text-xl font-semibold text-graytext">Challenge 1: CSS Color Variables</h3>
+        <p>
+          Initially, Tailwind wasn't recognizing my custom color variables defined in CSS. The solution was using Tailwind v4's <code class="bg-charcoal/50 px-2 py-1 rounded text-greenels">@theme</code> directive instead of relying on a config file—this ensured consistency between CSS variables and utility classes.
+        </p>
+
+        <h3 class="text-xl font-semibold text-graytext mt-6">Challenge 2: Layout Patterns</h3>
+        <p>
+          Creating a consistent, minimalistic layout across multiple pages required thoughtful use of:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-graytext/80">
+          <li><code class="bg-charcoal/50 px-2 py-1 rounded text-greenels">max-w-* classes</code> for content containers</li>
+          <li><code class="bg-charcoal/50 px-2 py-1 rounded text-greenels">mx-auto</code> for centering</li>
+          <li><code class="bg-charcoal/50 px-2 py-1 rounded text-greenels">grid & flex</code> for alternating layouts</li>
+          <li><code class="bg-charcoal/50 px-2 py-1 rounded text-greenels">space-y-*</code> for consistent vertical spacing</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold text-graytext mt-6">Challenge 3: Reusable Components</h3>
+        <p>
+          Astro's layout system made it easy to create a base <code class="bg-charcoal/50 px-2 py-1 rounded text-greenels">Layout.astro</code> component that all pages inherit. This ensures consistent headers, footers, and styling across the site.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-3xl font-semibold text-graytext">What I Learned</h2>
+        <p>
+          Building this site taught me more than just syntax. Here are the key takeaways:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-graytext/80">
+          <li><strong>Design systems matter</strong>—Using consistent colors, spacing, and typography creates a professional, cohesive feel</li>
+          <li><strong>Performance is a feature</strong>—Astro's approach to minimal JavaScript is refreshing and respects user experience</li>
+          <li><strong>Static doesn't mean simple</strong>—You can build rich, interactive experiences with static site generators</li>
+          <li><strong>Iterative refinement</strong>—Good design comes from multiple passes and intentional choices</li>
+          <li><strong>The tools should work for you</strong>—Astro and Tailwind's flexibility allows creativity without sacrificing productivity</li>
+        </ul>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-3xl font-semibold text-graytext">The Future</h2>
+        <p>
+          This site is a foundation for ongoing experimentation. Future plans include:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-graytext/80">
+          <li>Expanding the blog with posts on research, learning, and technical explorations</li>
+          <li>Building a project showcase section</li>
+          <li>Implementing dark mode toggle (Tailwind supports this natively)</li>
+          <li>Adding search functionality for blog posts</li>
+          <li>Exploring Astro Islands for interactive components where needed</li>
+        </ul>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-3xl font-semibold text-graytext">Conclusion</h2>
+        <p>
+          Building this site with Astro and Tailwind CSS has been a rewarding experience. It's given me a platform to share my journey while also deepening my understanding of modern web development practices.
+        </p>
+        <p>
+          If you're considering building a personal site or blog, I'd recommend exploring both tools. They complement each other beautifully and prioritize both developer experience and user experience.
+        </p>
+        <p>
+          Stay tuned for more posts. Happy exploring! 🌱
+        </p>
+      </section>
+    </div>
+
+    <!-- Navigation -->
+    <footer class="border-t border-graytext/20 pt-8 mt-12">
+      <div class="flex items-center justify-between">
+        <a href="/blog" class="text-greenels hover:text-blueels transition font-semibold">
+          ← Back to blog
+        </a>
+        <a href="/" class="text-graytext/60 hover:text-graytext transition">
+          Home
+        </a>
+      </div>
+    </footer>
+  </article>
+</Layout>
