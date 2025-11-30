@@ -1,0 +1,304 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+interface Course {
+  name: string;
+  slug: string;
+  credits: number;
+  grade?: string;
+}
+
+interface Semester {
+  number: number;
+  year: string;
+  courses: Course[];
+}
+
+const bachelors: Semester[] = [
+  {
+    number: 1,
+    year: '2022/2023',
+    courses: [
+      { name: 'Course 1', slug: 'course-1', credits: 5 },
+      { name: 'Course 2', slug: 'course-2', credits: 4 },
+      { name: 'Course 3', slug: 'course-3', credits: 5 },
+      { name: 'Course 4', slug: 'course-4', credits: 6 },
+    ]
+  },
+  {
+    number: 2,
+    year: '2022/2023',
+    courses: [
+      { name: 'Course 1', slug: 'course-1', credits: 5 },
+      { name: 'Course 2', slug: 'course-2', credits: 4 },
+      { name: 'Course 3', slug: 'course-3', credits: 6 },
+      { name: 'Course 4', slug: 'course-4', credits: 5 },
+    ]
+  },
+  {
+    number: 3,
+    year: '2023/2024',
+    courses: [
+      { name: 'Course 1', slug: 'course-1', credits: 6 },
+      { name: 'Course 2', slug: 'course-2', credits: 5 },
+      { name: 'Course 3', slug: 'course-3', credits: 5 },
+      { name: 'Course 4', slug: 'course-4', credits: 4 },
+    ]
+  },
+  {
+    number: 4,
+    year: '2023/2024',
+    courses: [
+      { name: 'Course 1', slug: 'course-1', credits: 6 },
+      { name: 'Course 2', slug: 'course-2', credits: 5 },
+      { name: 'Course 3', slug: 'course-3', credits: 5 },
+      { name: 'Course 4', slug: 'course-4', credits: 4 },
+    ]
+  },
+  {
+    number: 5,
+    year: '2024/2025',
+    courses: [
+      { name: 'Course 1', slug: 'course-1', credits: 5 },
+      { name: 'Course 2', slug: 'course-2', credits: 6 },
+      { name: 'Course 3', slug: 'course-3', credits: 5 },
+      { name: 'Course 4', slug: 'course-4', credits: 4 },
+    ]
+  },
+  {
+    number: 6,
+    year: '2024/2025',
+    courses: [
+      { name: 'Course 1', slug: 'course-1', credits: 10 },
+      { name: 'Course 2', slug: 'course-2', credits: 5 },
+      { name: 'Course 3', slug: 'course-3', credits: 8 },
+    ]
+  },
+];
+
+const masters: Semester[] = [
+  {
+    number: 1,
+    year: '2025/2026',
+    courses: [
+      { name: 'Course 1', slug: 'course-1', credits: 6 },
+      { name: 'Course 2', slug: 'course-2', credits: 5 },
+      { name: 'Course 3', slug: 'course-3', credits: 5 },
+    ]
+  },
+  {
+    number: 2,
+    year: '2025/2026',
+    courses: [
+      { name: 'Course 1', slug: 'course-1', credits: 6 },
+      { name: 'Course 2', slug: 'course-2', credits: 6 },
+      { name: 'Course 3', slug: 'course-3', credits: 4 },
+    ]
+  },
+  {
+    number: 3,
+    year: '2026/2027',
+    courses: [
+      { name: 'Course 1', slug: 'course-1', credits: 10 },
+      { name: 'Course 2', slug: 'course-2', credits: 5 },
+    ]
+  },
+  {
+    number: 4,
+    year: '2026/2027',
+    courses: [
+      { name: 'Course 1', slug: 'course-1', credits: 30 },
+    ]
+  },
+];
+---
+
+<Layout title="Study Journey">
+  <div class="space-y-20 px-6 py-16">
+    <!-- Hero Section -->
+    <section class="max-w-4xl mx-auto text-center space-y-4">
+      <h1 class="text-6xl font-bold text-graytext">Study Journey</h1>
+      <p class="text-base text-graytext/80 max-w-2xl mx-auto">
+        My academic path through Bachelor's and Master's studies in Information Science.
+      </p>
+    </section>
+
+    <!-- Bachelors Section -->
+    <section class="max-w-5xl mx-auto space-y-8">
+      <div class="space-y-4">
+        <h2 class="text-4xl font-semibold text-graytext">Bachelor's Degree</h2>
+        <p class="text-base text-graytext/80">
+          Information Science/Studies at Masaryk University Brno (2022 – 2025)
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {bachelors.map((semester) => (
+          <details class="group">
+            <summary class="cursor-pointer">
+              <div class="bg-greenels/10 border-2 border-greenels/40 hover:border-blueels rounded-xl p-6 transition duration-300 group-open:bg-greenels/20 group-open:border-blueels">
+                <div class="space-y-2">
+                  <p class="text-sm font-semibold text-greenels uppercase tracking-wide">Semester {semester.number}</p>
+                  <p class="text-lg font-semibold text-graytext">{semester.year}</p>
+                  <p class="text-xs text-graytext/60">{semester.courses.length} courses</p>
+                </div>
+                <div class="mt-4 text-greenels group-open:rotate-180 transition duration-300">
+                  ↓
+                </div>
+              </div>
+            </summary>
+            
+            <div class="mt-4 space-y-2 ml-4">
+              {semester.courses.map((course) => (
+                <a 
+                  href={`/study/course/${course.slug}`}
+                  class="block bg-charcoal border border-greenels/20 rounded-lg p-4 hover:bg-greenels/5 hover:border-blueels transition"
+                >
+                  <div class="flex items-start justify-between gap-4">
+                    <div class="flex-1">
+                      <p class="font-semibold text-graytext hover:text-blueels transition">
+                        {course.name}
+                      </p>
+                      <p class="text-xs text-graytext/60 mt-1">
+                        {course.credits} ECTS
+                      </p>
+                    </div>
+                    {course.grade && (
+                      <span class="text-sm font-semibold text-greenels">
+                        {course.grade}
+                      </span>
+                    )}
+                  </div>
+                </a>
+              ))}
+            </div>
+          </details>
+        ))}
+      </div>
+
+      <div class="bg-greenels/5 border border-greenels/20 rounded-xl p-6 mt-8">
+        <p class="text-sm text-graytext/70">
+          <span class="font-semibold text-graytext">Total ECTS:</span> 180 credits
+        </p>
+      </div>
+    </section>
+
+    <!-- Masters Section -->
+    <section class="max-w-5xl mx-auto space-y-8">
+      <div class="space-y-4">
+        <h2 class="text-4xl font-semibold text-graytext">Master's Degree</h2>
+        <p class="text-base text-graytext/80">
+          Information Studies at Masaryk University Brno (2025 – 2027, expected)
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {masters.map((semester) => (
+          <details class="group">
+            <summary class="cursor-pointer">
+              <div class="bg-blueels/10 border-2 border-blueels/40 hover:border-greenels rounded-xl p-6 transition duration-300 group-open:bg-blueels/20 group-open:border-greenels">
+                <div class="space-y-2">
+                  <p class="text-sm font-semibold text-blueels uppercase tracking-wide">Semester {semester.number}</p>
+                  <p class="text-lg font-semibold text-graytext">{semester.year}</p>
+                  <p class="text-xs text-graytext/60">{semester.courses.length} course{semester.courses.length !== 1 ? 's' : ''}</p>
+                </div>
+                <div class="mt-4 text-blueels group-open:rotate-180 transition duration-300">
+                  ↓
+                </div>
+              </div>
+            </summary>
+            
+            <div class="mt-4 space-y-2 ml-4">
+              {semester.courses.map((course) => (
+                <a 
+                  href={`/study/course/${course.slug}`}
+                  class="block bg-charcoal border border-blueels/20 rounded-lg p-4 hover:bg-blueels/5 hover:border-greenels transition"
+                >
+                  <div class="flex items-start justify-between gap-4">
+                    <div class="flex-1">
+                      <p class="font-semibold text-graytext hover:text-greenels transition">
+                        {course.name}
+                      </p>
+                      <p class="text-xs text-graytext/60 mt-1">
+                        {course.credits} ECTS
+                      </p>
+                    </div>
+                    {course.grade && (
+                      <span class="text-sm font-semibold text-blueels">
+                        {course.grade}
+                      </span>
+                    )}
+                  </div>
+                </a>
+              ))}
+            </div>
+          </details>
+        ))}
+      </div>
+
+      <div class="bg-blueels/5 border border-blueels/20 rounded-xl p-6 mt-8">
+        <p class="text-sm text-graytext/70">
+          <span class="font-semibold text-graytext">Total ECTS (expected):</span> 120 credits
+        </p>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="max-w-3xl mx-auto space-y-6">
+      <h2 class="text-3xl font-semibold text-graytext">Timeline</h2>
+      <div class="space-y-4">
+        <div class="flex gap-4">
+          <div class="w-1 bg-linear-to-b from-greenels to-blueels rounded-full"></div>
+          <div>
+            <p class="font-semibold text-graytext">Sep 2022</p>
+            <p class="text-sm text-graytext/70">Started Bachelor's at Masaryk University Brno</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-1 bg-linear-to-b from-greenels to-blueels rounded-full"></div>
+          <div>
+            <p class="font-semibold text-graytext">2024</p>
+            <p class="text-sm text-graytext/70">Completed AI Ethics and Machine Learning certificates (University of Helsinki)</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-1 bg-linear-to-b from-greenels to-blueels rounded-full"></div>
+          <div>
+            <p class="font-semibold text-graytext">Jun 2025</p>
+            <p class="text-sm text-graytext/70">Expected Bachelor's completion</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-1 bg-linear-to-b from-greenels to-blueels rounded-full"></div>
+          <div>
+            <p class="font-semibold text-graytext">Sep 2025</p>
+            <p class="text-sm text-graytext/70">Master's program begins</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-1 bg-linear-to-b from-greenels to-blueels rounded-full"></div>
+          <div>
+            <p class="font-semibold text-graytext">2027</p>
+            <p class="text-sm text-graytext/70">Expected Master's completion</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-3xl mx-auto text-center space-y-4 bg-greenels/5 border border-greenels/20 rounded-xl p-8">
+      <h2 class="text-2xl font-semibold text-graytext">Want to Know More?</h2>
+      <p class="text-base text-graytext/80">
+        Check out my blog for reflections on what I'm learning or visit the about page to learn more about my interests.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="/blog" class="text-greenels hover:text-blueels font-semibold transition">
+          Read my blog →
+        </a>
+        <a href="/about" class="text-blueels hover:text-greenels font-semibold transition">
+          Learn about me →
+        </a>
+      </div>
+    </section>
+  </div>
+</Layout>
