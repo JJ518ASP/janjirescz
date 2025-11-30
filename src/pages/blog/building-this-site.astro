@@ -26,7 +26,7 @@ import Layout from '../../layouts/Layout.astro';
       <section class="space-y-4">
         <h2 class="text-3xl font-semibold text-graytext">Introduction</h2>
         <p>
-          After months of learning web development, I finally decided to build a personal website that reflects who I am and what I'm passionate about. This site isn't just a portfolio—it's a space for reflection, documentation, and experimentation with modern web technologies.
+          After months of learning web development, I finally decided to build a personal website that reflects who I am and what I'm passionate about. This site isn't just a portfolio. It's a space for reflection, documentation, and experimentation with modern web technologies.
         </p>
         <p>
           I chose <strong class="text-blueels">Astro</strong> and <strong class="text-greenels">Tailwind CSS</strong> as my primary tools. Here's why, and what I learned in the process.
@@ -39,8 +39,8 @@ import Layout from '../../layouts/Layout.astro';
           Astro is a modern static site builder that focuses on delivering fast, content-rich websites. What attracted me:
         </p>
         <ul class="list-disc list-inside space-y-2 text-graytext/80">
-          <li>Minimal JavaScript by default—only sends what's needed to the browser</li>
-          <li>Framework-agnostic—I can use HTML, React, Vue, or other components</li>
+          <li>Minimal JavaScript by default only sends what's needed to the browser</li>
+          <li>Framework-friendly: I can use HTML, React, Vue, or other components</li>
           <li>Excellent developer experience with hot reloading</li>
           <li>Built-in support for markdown, making blogging intuitive</li>
           <li>Easy deployment to platforms like GitHub Pages</li>
@@ -57,9 +57,9 @@ import Layout from '../../layouts/Layout.astro';
         </p>
         <ul class="list-disc list-inside space-y-2 text-graytext/80">
           <li>Consistency through a design system (spacing, colors, typography)</li>
-          <li>Fast iteration—no context switching between HTML and CSS files</li>
-          <li>Small bundle size—only the classes you use are included</li>
-          <li>Dark mode support built-in</li>
+          <li>Fast iteration (no context switching between HTML and CSS files)</li>
+          <li>Small bundle size (only the classes you use are included)</li>
+          <li>Dark/Light mode support built-in</li>
           <li>Responsive design made simple with mobile-first breakpoints</li>
         </ul>
         <p>
@@ -72,7 +72,7 @@ import Layout from '../../layouts/Layout.astro';
         
         <h3 class="text-xl font-semibold text-graytext">Challenge 1: CSS Color Variables</h3>
         <p>
-          Initially, Tailwind wasn't recognizing my custom color variables defined in CSS. The solution was using Tailwind v4's <code class="bg-charcoal/50 px-2 py-1 rounded text-greenels">@theme</code> directive instead of relying on a config file—this ensured consistency between CSS variables and utility classes.
+          Initially, Tailwind wasn't recognizing my custom color variables defined in CSS. The solution was using Tailwind v4's <code class="bg-charcoal/50 px-2 py-1 rounded text-greenels">@theme</code> directive instead of relying on a config file, which ensured consistency between CSS variables and utility classes.
         </p>
 
         <h3 class="text-xl font-semibold text-graytext mt-6">Challenge 2: Layout Patterns</h3>
@@ -98,11 +98,11 @@ import Layout from '../../layouts/Layout.astro';
           Building this site taught me more than just syntax. Here are the key takeaways:
         </p>
         <ul class="list-disc list-inside space-y-2 text-graytext/80">
-          <li><strong>Design systems matter</strong>—Using consistent colors, spacing, and typography creates a professional, cohesive feel</li>
-          <li><strong>Performance is a feature</strong>—Astro's approach to minimal JavaScript is refreshing and respects user experience</li>
-          <li><strong>Static doesn't mean simple</strong>—You can build rich, interactive experiences with static site generators</li>
-          <li><strong>Iterative refinement</strong>—Good design comes from multiple passes and intentional choices</li>
-          <li><strong>The tools should work for you</strong>—Astro and Tailwind's flexibility allows creativity without sacrificing productivity</li>
+          <li><strong>Design systems matter</strong>  Using consistent colors, spacing, and typography creates a professional, cohesive feel</li>
+          <li><strong>Performance is a feature</strong> Astro's approach to minimal JavaScript is refreshing and respects user experience</li>
+          <li><strong>Static doesn't mean simple</strong> You can build rich, interactive experiences with static site generators</li>
+          <li><strong>Iterative refinement</strong> Good design comes from multiple passes and intentional choices</li>
+          <li><strong>The tools should work for you</strong>  Astro and Tailwind's flexibility allows creativity without sacrificing productivity</li>
         </ul>
       </section>
 
@@ -114,7 +114,7 @@ import Layout from '../../layouts/Layout.astro';
         <ul class="list-disc list-inside space-y-2 text-graytext/80">
           <li>Expanding the blog with posts on research, learning, and technical explorations</li>
           <li>Building a project showcase section</li>
-          <li>Implementing dark mode toggle (Tailwind supports this natively)</li>
+          <li>Implementing dark/light mode toggle (Tailwind supports this natively)</li>
           <li>Adding search functionality for blog posts</li>
           <li>Exploring Astro Islands for interactive components where needed</li>
         </ul>
