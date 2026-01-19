@@ -2,7 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 ---
 
-<Layout title="ISKM61 General Reflection">
+<Layout title="ISKM01 General Reflection">
   <body>
     <main>
       <div class="pl-8 flex gap-4 mb-12">
@@ -15,10 +15,10 @@ import Layout from '../../../layouts/Layout.astro';
           </a>
           <div class="hidden group-hover:block absolute left-0 top-full mt-0 bg-charcoal border border-greenels rounded-xl shadow-lg z-50 min-w-56 p-4">
             <ul class="space-y-2">
-              <li><a href="#what-learned" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Co jsem se naučil/a?</a></li>
+              <li><a href="#what-learned" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Co jsem se naučil?</a></li>
               <li><a href="#what-experience" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Pozitivní/negativní zkušenost</a></li>
               <li><a href="#what-satisfaction" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Uspokojení/ocenění</a></li>
-              <li><a href="#what-appreciation" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Co bych ocenil/a</a></li>
+              <li><a href="#what-appreciation" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Co bych ocenil?</a></li>
               <li><a href="#what-core" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Jádrový přínos</a></li>
             </ul>
           </div>
@@ -57,28 +57,11 @@ import Layout from '../../../layouts/Layout.astro';
             </ul>
           </div>
         </div>
-
-        <!-- Eudutopia Button (Alternative) -->
-        <div class="relative group">
-          <a href="#eudutopia-section">
-            <button class="cursor-pointer bg-blueels items-center rounded-xl p-6 hover:text-greenels text-xl font-bold">
-              Eudutopia Model
-            </button>
-          </a>
-          <div class="hidden group-hover:block absolute left-0 top-full mt-0 bg-charcoal border border-blueels rounded-xl shadow-lg z-50 min-w-56 p-4">
-            <ul class="space-y-2">
-              <li><a href="#ohlédnutí" class="block px-2 py-1 hover:bg-blueels hover:text-charcoal rounded transition">Ohlédnutí</a></li>
-              <li><a href="#introspekce" class="block px-2 py-1 hover:bg-blueels hover:text-charcoal rounded transition">Introspekce</a></li>
-              <li><a href="#odstup" class="block px-2 py-1 hover:bg-blueels hover:text-charcoal rounded transition">Odstup</a></li>
-              <li><a href="#výhled" class="block px-2 py-1 hover:bg-blueels hover:text-charcoal rounded transition">Výhled do budoucna</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
 
       <!-- Course Basics -->
       <section class="pl-8 mb-12">
-        <h1 class="mx-auto flex text-6xl p-6 mb-4">ISKM61: MOOC: Learning Online</h1>
+        <h1 class="mx-auto flex text-6xl p-6 mb-4">ISKM01: Informační vědy</h1>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 bg-charcoal/50 p-6 rounded-xl border border-greenels">
           <div>
             <h3 class="font-bold text-xl mb-2">Kredity</h3>
@@ -86,7 +69,7 @@ import Layout from '../../../layouts/Layout.astro';
           </div>
           <div>
             <h3 class="font-bold text-xl mb-2">Anotace</h3>
-            <p class="text-lg">Volba MOOC kurzu na Coursera/edX souvisejícího se studiem, minimálně 5 týdnů. Praktické osvojení online učení.[web:15]</p>
+            <p class="text-lg">Propojení vlastní práce s informačními vědami, teoretický rámec a rozvoj expertízy s kritickou reflexí vybraných témat.</p>
           </div>
           <div>
             <h3 class="font-bold text-xl mb-2">Tutor</h3>
@@ -95,91 +78,71 @@ import Layout from '../../../layouts/Layout.astro';
           <div>
             <h3 class="font-bold text-xl mb-2">Celkové hodnocení</h3>
             <div class="flex items-center space-x-2">
-              <span class="text-3xl">⭐⭐⭐⭐☆</span>
-              <span class="text-lg">(4/5)</span>
+              <span class="text-3xl">⭐⭐⭐⭐⭐</span>
+              <span class="text-lg">(5/5)</span>
             </div>
-            <p class="text-sm mt-1">Praktické dovednosti + reflexe</p>
+            <p class="text-sm mt-1">Interaktivní workshopy + týmová práce</p>
           </div>
         </div>
       </section>
 
       <!-- What? Section -->
       <section id="what-section" class="pl-8 mb-12">
-        <h2 id="what-learned" class="font-bold pl-8 p-5 text-3xl border-l-4 border-greenels">What? (Co?)</h2>
-        <h3 class="pl-8 p-4 font-bold text-xl mb-4" style="color: var(--color-greenels);">Co jsem se naučil/a?</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Základy ML (Teachable Machine, neurální sítě), Excel analýza (pivot tabulky, VLOOKUP, čištění dat), etika dat.[web:12][memory:3][memory:6]</p>
+        <h2 class="font-bold pl-8 p-5 text-3xl border-l-4 border-greenels">What? (Co?)</h2>
+        
+        <h3 id="what-learned" class="pl-8 p-4 font-bold text-xl mb-4" style="color: var(--color-greenels);">Co jsem se naučil?</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Předmět mi ukázal mnohem hlubší a komplexnější pohled na obor. Navázal na to, co jsem už věděl, a posunul mě dál. Nejvíc mě bavila práce na společné učebnici v interdisciplinárním týmu. Každý měl jiný pohled a přístup, což bylo velmi obohacující. Workshopy se vzájemným učením, kdy jsme se střídali v rolích učitelů a posluchačů, podpořily vnímání konceptů a osvěžily klasické vyučování. A propojení odborného výkladu s filozofickým kontextem od pana docenta Černého dávalo všemu větší smysl.</p>
 
         <h3 id="what-experience" class="pl-8 p-4 font-bold text-xl mb-4">Co pro mě byla pozitivní/negativní zkušenost?</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Pozitivní: Hands-on projekty (gesture recognition, fake news detector). Negativní: Časový tlak, abstraktní koncepty jako bias/variance.[web:12]</p>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Interaktivita s Mentimetrem a workshopy byly skvělé. Konečně jsme neseděli jen pasivně a poslouchali, ale aktivně jsme se zapojovali. Výstupy z týmové práce mi dávaly smysl a viděl jsem v nich přímé uplatnění. Vzájemné učení mezi skupinami bylo taky velké pozitivum. Když jsem vysvětloval téma ostatním, pochopil jsem ho mnohem lépe. Na druhou stranu, občas bylo náročné koordinovat práci v týmu, protože každý měl jiné tempo a přístup. Ale i to byla cenná zkušenost.</p>
 
         <h3 id="what-satisfaction" class="pl-8 p-4 font-bold text-xl mb-4">Co mi kurz přinesl za uspokojení/ocenění?</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Dosazení funkcích modelů, úspěšné pivot tabulky, feedback od tutora na reflexi.[memory:1]</p>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Největší uspokojení mi přinesla dokončená společná učebnice. Když jsem viděl, jak naše různé kapitoly dohromady tvoří celek, byl to super pocit. Ocenil jsem také zpětnou vazbu od ostatních skupin během prezentací. Někdy mi pomohli ujasnit si vlastní myšlenky lépe než další čtení.</p>
 
-        <h3 id="what-appreciation" class="pl-8 p-4 font-bold text-xl mb-4">Co bych na kurzu ocenil/a?</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Více česky, lepší časový management tipy, pokročilejší Python integrace.[web:16]</p>
+        <h3 id="what-appreciation" class="pl-8 p-4 font-bold text-xl mb-4">Co bych na kurzu ocenil?</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Ocenil bych ještě více praktických příkladů aplikace informační vědy v různých oborech. Taky by bylo zajímavé mít více hostů z praxe, kteří by ukázali, jak konkrétně používají koncepty informační vědy ve své práci. A možná trochu více času na zpracování některých složitějších témat, protože občas jsme museli rychle přeskakovat.</p>
 
         <h3 id="what-core" class="pl-8 p-4 font-bold text-xl mb-4">Jádrový přínos pro sebe</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Systémový přístup k datům/ML, etické povědomí, praktické Excel skills pro práci.[web:13]</p>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Hlavní přínos je hlubší pochopení informační vědy jako oboru a jejího propojení s mým vlastním studiem. Schopnost vysvětlit téma druhým a transformovat ho do srozumitelné podoby je dovednost, kterou budu potřebovat v jakékoli budoucí práci. A filozofický kontext mi pomohl vidět širší souvislosti a smysl v tom, co dělám.</p>
       </section>
 
       <!-- So What? Section -->
       <section id="so-what-section" class="pl-8 mb-12">
         <h2 class="font-bold pl-8 p-5 text-3xl border-l-4 border-greenels">So What? (Tak co?)</h2>
+        
         <h3 id="so-what-practice" class="pl-8 p-4 font-bold text-xl mb-4">Pro moji praxi a expertízu</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Posílil data processing (XML/Python + Excel), ML pro digital humanities.[memory:5][memory:2]</p>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Předmět mi dal solidní teoretický rámec pro práci s informacemi a daty. Teď dokážu lépe nahlížet na témata mého vlastního výzkumu v širší oborové perspektivě. Interdisciplinární spolupráce mi ukázala, jak důležité je umět komunikovat přes hranice oborů. Tato schopnost je neocenitelná v dnešním propojeném světě. Naučil jsem se také didakticky transformovat složitá témata a zpřístupnit je různým publiku.</p>
 
         <h3 id="so-what-carry" class="pl-8 p-4 font-bold text-xl mb-4">Do praxe odnáším</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Checklist pro data quality, pivot pro reporty, etické úvahy u AI projektů.[web:19]</p>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Odnáším si schopnost pracovat v heterogenních týmech a využívat různorodost jako sílu, ne překážku. Naučil jsem se strukturovat a prezentovat složité informace tak, aby byly srozumitelné i pro lidi mimo můj obor.</p>
 
-        <h3 id="so-what-change-self" class="pl-8 p-4 font-bold text-xl mb-4">Co jsem na sobě změnil/a</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Lepší time management (digital wellbeing apps), hlubší reflexe.[memory:11]</p>
+        <h3 id="so-what-change-self" class="pl-8 p-4 font-bold text-xl mb-4">Co jsem na sobě změnil</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Zlepšil jsem své komunikační dovednosti, zejména při vysvětlování složitých konceptů. Naučil jsem se lépe naslouchat perspektivám lidí z jiných oborů a integrovat je do vlastního myšlení. Stal jsem se otevřenější k různým pohledům na stejný problém. A také jsem si uvědomil hodnotu vzájemného učení. Když vyučuji ostatní, sám se učím nejvíce.</p>
 
         <h3 id="so-what-methods" class="pl-8 p-4 font-bold text-xl mb-4">Metody učení/pracování se sebou</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Flipped classroom, hands-on před teorií, paper diary pro plánování.[web:12]</p>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Objevil jsem sílu peer learning a vzájemného vyučování. Když musím téma vysvětlit druhým, musím ho pochopit mnohem hlouběji. Interaktivní nástroje jako Mentimeter mi ukázaly, jak aktivní zapojení zlepšuje zapamatování a porozumění.</p>
       </section>
 
       <!-- Now What? Section -->
       <section id="now-what-section" class="pl-8 mb-12">
         <h2 class="font-bold pl-8 p-5 text-3xl border-l-4 border-greenels">Now What? (A teď co?)</h2>
+        
         <h3 id="now-what-improve" class="pl-8 p-4 font-bold text-xl mb-4">Jak se zlepšit</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Procvičovat Python ML knihovny (scikit-learn), advanced Excel dashboards.</p>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Chci si prohloubit znalosti v konkrétních oblastech informační vědy, které se přímo dotýkají mého oboru. Plánuju číst více odborné literatury a sledovat aktuální výzkum v oboru. Taky se chci zlepšit v didaktické transformaci složitých témat a trénovat prezentační dovednosti. A rád bych se více zapojil do interdisciplinární spolupráce i mimo rámec studia.</p>
 
         <h3 id="now-what-permanent" class="pl-8 p-4 font-bold text-xl mb-4">Trvalé změny</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Data ethics checklist do workflow, týdenní reflexe.</p>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Budu aktivně vyhledávat příležitosti k interdisciplinární spolupráci. A při práci s informacemi budu vždy zvažovat širší filozofické a etické souvislosti. Vzájemné učení a peer review integruji do svého studijního procesu jako standardní praxi.</p>
 
         <h3 id="now-what-work" class="pl-8 p-4 font-bold text-xl mb-4">Jak dále pracovat</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-6">Aplikovat na XML data projects, portfolio s ML/Excel viz.</p>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Aplikuji naučené koncepty informační vědy na moje vlastní projekty. Budu využívat interdisciplinární přístup k řešení problémů a aktivně vyhledávat spolupráci s lidmi z různých oborů. Rád bych vedl workshopy nebo prezentace, kde budu sdílet své poznatky s ostatními.</p>
 
         <h3 id="now-what-actions" class="pl-8 p-4 font-bold text-xl mb-4">Konkrétní akce</h3>
         <ul class="max-w-6xl pl-8 text-lg space-y-2 list-disc list-inside">
-          <li>Udělat ML projekt pro lingvistiku (Q1 2026)</li>
-          <li>Excel dashboard pro knihovní data (už teď)</li>
-          <li>Přečíst Floridi o AI ethics</li>
+          <li>Do konce února 2026 přečíst alespoň tři klíčové texty (Floridi nejspíš) z informační vědy relevantní k mému výzkumu</li>
+          <li>V Q1 2026 zorganizovat nebo se zúčastnit peer learning session s kamarády na vybrané téma</li>
+          <li>Během jarního semestru 2026 aplikovat koncepty informační vědy na konkrétní projekty</li>
         </ul>
       </section>
-
-      <!-- Eudutopia Section (Shorter Alternative) -->
-      <section id="eudutopia-section" class="pl-8 mb-12">
-        <h2 class="font-bold pl-8 p-5 text-3xl border-l-4 border-blueels">Eudutopia Model</h2>
-
-        <h3 id="ohlédnutí" class="pl-8 p-4 font-bold text-xl mb-4">Ohlédnutí</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-4">Před: Základy Python/XML. Zlepšení: Data cleaning/ML deploy. Pomohly: Teachable Machine, Excel translator.[memory:6]</p>
-
-        <h3 id="introspekce" class="pl-8 p-4 font-bold text-xl mb-4">Introspekce</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-4">Dozvěděl: Potřebuji lepší time mgmt. Změna představ: Excel není nudný. Spokojenost: Praktické skills.[web:14]</p>
-
-        <h3 id="odstup" class="pl-8 p-4 font-bold text-xl mb-4">Odstup</h3>
-        <p class="max-w-6xl pl-8 text-lg mb-4">Jiný by dělal méně reflexe. Změnil bych: Více group work. Hodnocení: Praktický, ale časově náročný.[web:12]</p>
-
-        <h3 id="výhled" class="pl-8 p-4 font-bold text-xl mb-4">Výhled do budoucna</h3>
-        <ul class="max-w-6xl pl-8 text-lg space-y-2 list-disc list-inside mb-6">
-          <li>Zlepšit studium: Více peer review</li>
-          <li>Zlepšit výstup: Grafy/charts přidat</li>
-          <li>Znova: Lepší time planning</li>
-        </ul>
-      </section>
-
-      <img class="pl-8 p-6 w-full max-w-4xl mx-auto rounded-xl shadow-2xl" src="/img/ISKM61.jpg" alt="ISKM61 Reflection Visual"/>
     </main>
   </body>
 </Layout>

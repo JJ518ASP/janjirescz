@@ -1,146 +1,148 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 ---
-<Layout title="ISKM61">
+
+<Layout title="ISKM101 General Reflection">
   <body>
     <main>
-      <h1 class="mx-auto flex text-6xl p-6">ISKM61 MOOC: learning online</h1>
-      <div class="pl-8 flex gap-4">
-        <!-- Introduction to ML Button -->
+      <div class="pl-8 flex gap-4 mb-12">
+        <!-- What Button -->
         <div class="relative group">
-          <a href="#introduction-to-machine-learning">
-            <button class="cursor-pointer bg-greenels items-center rounded-xl p-6 hover:text-blueels">
-              Introduction to Machine Learning and AI
+          <a href="#what-section">
+            <button class="cursor-pointer bg-greenels items-center rounded-xl p-6 hover:text-blueels text-xl font-bold">
+              What? (Co?)
             </button>
           </a>
-          <!-- Context Menu -->
-          <div class="hidden group-hover:block absolute left-0 top-full mt-0 bg-charcoal border border-greenels rounded-xl shadow-lg z-50 min-w-56">
-            <nav class="py-2">
-              <a href="#introduction-to-machine-learning-week-1" class="block px-4 py-2 hover:bg-greenels hover:text-charcoal transition">Week 1</a>
-              <a href="#introduction-to-machine-learning-week-2" class="block px-4 py-2 hover:bg-greenels hover:text-charcoal transition">Week 2</a>
-              <a href="#introduction-to-machine-learning-week-3" class="block px-4 py-2 hover:bg-greenels hover:text-charcoal transition">Week 3</a>
-              <a href="#introduction-to-machine-learning-week-4" class="block px-4 py-2 hover:bg-greenels hover:text-charcoal transition">Week 4</a>
-            </nav>
+          <div class="hidden group-hover:block absolute left-0 top-full mt-0 bg-charcoal border border-greenels rounded-xl shadow-lg z-50 min-w-56 p-4">
+            <ul class="space-y-2">
+              <li><a href="#what-learned" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Co jsem se naučil?</a></li>
+              <li><a href="#what-experience" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Pozitivní/negativní zkušenost</a></li>
+              <li><a href="#what-satisfaction" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Uspokojení/ocenění</a></li>
+              <li><a href="#what-appreciation" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Co bych ocenil?</a></li>
+              <li><a href="#what-core" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Jádrový přínos</a></li>
+            </ul>
           </div>
         </div>
-      
-        <!-- Analyzing Data Button -->
+
+        <!-- So What Button -->
         <div class="relative group">
-          <a href="#analyzing-data-with-excel">
-            <button class="cursor-pointer bg-greenels items-center rounded-xl p-6 hover:text-blueels">
-              Analyzing Data with Excel
+          <a href="#so-what-section">
+            <button class="cursor-pointer bg-greenels items-center rounded-xl p-6 hover:text-blueels text-xl font-bold">
+              So What? (Tak co?)
             </button>
           </a>
-          <!-- Context Menu -->
-          <div class="hidden group-hover:block absolute left-0 top-full mt-0 bg-charcoal border border-greenels rounded-xl shadow-lg z-50 min-w-56">
-            <nav class="py-2">
-              <a href="#analyzing-data-with-excel-week-5" class="block px-4 py-2 hover:bg-greenels hover:text-charcoal transition">Week 5</a>
-              <a href="#analyzing-data-with-excel-week-6" class="block px-4 py-2 hover:bg-greenels hover:text-charcoal transition">Week 6</a>
-              <a href="#analyzing-data-with-excel-week-7" class="block px-4 py-2 hover:bg-greenels hover:text-charcoal transition">Week 7</a>
-              <a href="#analyzing-data-with-excel-week-8" class="block px-4 py-2 hover:bg-greenels hover:text-charcoal transition">Week 8</a>
-              <a href="#analyzing-data-with-excel-week-9" class="block px-4 py-2 hover:bg-greenels hover:text-charcoal transition">Week 9</a>
-              <a href="#analyzing-data-with-excel-week-10" class="block px-4 py-2 hover:bg-greenels hover:text-charcoal transition">Week 10</a>
-              <a href="#analyzing-data-with-excel-week-11" class="block px-4 py-2 hover:bg-greenels hover:text-charcoal transition">Week 11</a>
-            </nav>
+          <div class="hidden group-hover:block absolute left-0 top-full mt-0 bg-charcoal border border-greenels rounded-xl shadow-lg z-50 min-w-56 p-4">
+            <ul class="space-y-2">
+              <li><a href="#so-what-practice" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Pro praxi a expertízu</a></li>
+              <li><a href="#so-what-carry" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Do praxe odnáším</a></li>
+              <li><a href="#so-what-change-self" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Změna na sobě</a></li>
+              <li><a href="#so-what-methods" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Metody učení</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Now What Button -->
+        <div class="relative group">
+          <a href="#now-what-section">
+            <button class="cursor-pointer bg-greenels items-center rounded-xl p-6 hover:text-blueels text-xl font-bold">
+              Now What? (A teď co?)
+            </button>
+          </a>
+          <div class="hidden group-hover:block absolute left-0 top-full mt-0 bg-charcoal border border-greenels rounded-xl shadow-lg z-50 min-w-56 p-4">
+            <ul class="space-y-2">
+              <li><a href="#now-what-improve" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Zlepšit se</a></li>
+              <li><a href="#now-what-permanent" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Trvalé změny</a></li>
+              <li><a href="#now-what-work" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Dále pracovat</a></li>
+              <li><a href="#now-what-actions" class="block px-2 py-1 hover:bg-greenels hover:text-charcoal rounded transition">Konkrétní akce</a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <h2 id = "introduction-to-machine-learning" class="font-bold pl-8 p-5">RaspberryPiFoundation: Introduction to Machine Learning and AI</h2>
-      <h3 id= "introduction-to-machine-learning-week-1" class="pl-8 p-4 font-bold text-xl">Week 1</h3>
-      <h4 class="pl-8 p-4 font-medium text-lg">What emotions or feelings have you experienced during your studies this week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I felt excited and curious as I began exploring the foundational concepts of machine learning and AI. At times, I also experienced a bit of frustration when new technical terms and ideas felt complex, but overall I remained motivated to understand the material. I really felt a bit of relief, when I found out, that the main part of this course takes place in Discussion format. I also felt really amazed by the Teachable machine and that I got to make a program in my first week!</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What are the key concepts or skills you have learned so far in this first week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">I learned about the basic definitions of AI and machine learning, including how machines can be trained to recognize patterns and make decisions from data. I also gained insight into types of machine learning models, the process of training, and the importance of datasets. I got to brainstorm some ideas for new games and create a functioning program with no code utility!</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What progress have you made toward your learning goals or project milestones?</h4>
-      <p class="max-w-6xl pl-8 text-lg">I successfully completed introductory exercises and familiarized myself with the Teachable Machine tool, which allowed me to design and train a simple model for classifying different hand gestures. This hands-on practice strengthened my understanding of supervised learning concepts. One of the most practical and fun exercises from my AI learning journey so far.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What challenges or problems have you faced during your learning, and how did you attempt to solve them?</h4>
-      <p class="max-w-6xl pl-8 text-lg">The main challenge I faced was time pressure, as balancing my schedule with the course workload required careful planning. Additionally, I needed to acquire a webcam to participate fully in the exercises that involved training models with live video input. :D</p>
-    	<h3 id= "introduction-to-machine-learning-week-2" class="pl-8 p-4 font-bold text-xl">Week 2</h3>
-      <h4 class="pl-8 p-4 font-medium text-lg">What emotions or feelings have you experienced during your studies this week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I felt intellectually stimulated by the more theoretical approach, especially as we dove into the scope of problems that AI can solve and the need for critical thinking when identifying suitable applications. At times, the concepts around regression and the discussion of bias and variance made me pause and reflect, as they seemed more abstract compared to the hands-on activities from before. I felt a sense of responsibility when learning about data collection ethics and potential biases, realizing how these issues shape real-world AI impact.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What are the key concepts or skills you have learned so far in this first week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">I gained insight into framing real-world problems for AI solutions, learning how to distinguish which problems are appropriate for machine learning. The lesson on regression showed me how AI can be used to predict continuous outcomes, such as estimating age or prices, by identifying patterns in data. The sections on data science and data preparation built my understanding of how crucial it is to meticulously collect and organize data. Importantly, I learned about the ethical aspects of data collection and the significant effects of bias and variance on AI model performance. The difference between models that are too simplistic and ones that overfit the data. The discussion on bias in recruitment highlighted how unbalanced data can lead to unfair outcomes.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What progress have you made toward your learning goals or project milestones?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I completed theoretical and practical activities that deepened my comprehension of how to properly prepare datasets, as well as how to spot and address ethical and statistical pitfalls in real AI projects. I worked through examples of bias and variance and reflected on bias in recruitment, strengthening my ability to critically analyze how algorithms work in different social contexts. My approach to future projects is now more systematic, as I’m more aware of the hidden layers of complexity in what might seem like purely technical challenges.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What challenges or problems have you faced during your learning, and how did you attempt to solve them?</h4>
-      <p class="max-w-6xl pl-8 text-lg">One significant challenge was visualizing how bias and variance affect model outcomes in practice. It took some rereading and looking up extra examples to make these concepts clear. When confused by the specifics of regression, I turned to supplementary resources and revisited the video explanations, which helped bridge the gap between abstract math and practical applications. Understanding data ethics was sobering and occasionally overwhelming, but engaging with case studies and class discussions made the concepts more tangible and relevant.</p>
-      <h3 id= "introduction-to-machine-learning-week-3" class="pl-8 p-4 font-bold text-xl">Week 3</h3>
-      <h4 class="pl-8 p-4 font-medium text-lg">What emotions or feelings have you experienced during your studies this week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I felt a mix of excitement and accomplishment as I explored different ways machines learn. At times, I faced some confusion with new algorithms like decision trees and k-nearest neighbor, but completing practical activities helped to grasp it better. I also felt motivated by seeing how I could train and deploy my own models using both Scratch and Python on the Machine Learning for Kids website.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What are the key concepts or skills you have learned so far in this first week?</h4>
-  		<p class="max-w-6xl pl-8 text-lg">I learned how different types of machine learning work: supervised learning where models learn from labeled data, unsupervised learning where patterns are found in unlabeled data, and reinforcement learning where agents learn through rewards and penalties. I gained hands-on experience with algorithms like decision trees and k-nearest neighbors, including how to train and use them in real projects. I practiced deploying models into programming environments like Scratch and Python, which deepened my understanding of practical machine learning applications.</p>
-  		<h4 class="pl-8 p-4 font-medium text-lg">What progress have you made toward your learning goals or project milestones?</h4>
-  		<p class="max-w-6xl pl-8 text-lg">I completed multiple practical exercises that took me from theory to application by building and deploying models on the Machine Learning for Kids platform. This progress helped me link abstract concepts to seeable outcomes, advancing both my coding and machine learning skills. I am now more confident in creating machine learning projects independently and applying algorithms to different problem types.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What challenges or problems have you faced during your learning, and how did you attempt to solve them?</h4>
-      <p class="max-w-6xl pl-8 text-lg">Reflecting on why case studies last week made data ethics more tangible for me, I realize it was because they provided concrete examples showing the real-world consequences of unethical data collection and use, which helped me connect abstract ideas to practical outcomes.One challenge this week was understanding how reinforcement learning works since it differs from the more intuitive supervised and unsupervised methods. To overcome this, I reviewed the tutorials and the videos again and experimented with simple games (like tic-tac-toe, that I made in the platform) to see the concepts in action. Deploying models in Python also presented some difficulties, I needed to update the software and refresh some of the basic syntax.</p>
-      <h3 id= "introduction-to-machine-learning-week-4" class="pl-8 p-4 font-bold text-xl">Week 4</h3>
-      <h4 class="pl-8 p-4 font-medium text-lg">What emotions or feelings have you experienced during your studies this week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I felt excited and somewhat challenged as I explored neural networks, which combine ideas from biology and computing. Working on the fake news detection model made the societal impact of AI feel very real and important (and to adress the feedback from last week, yes, it really feels like you can meet AI on every corner, now that I engage with it more, so you are not alone in this perception :)). I also enjoyed the concept of unplugged activities, especially an "intelligent piece of paper," which helped me understand abstract concepts in a clear and engaging way. Creating a virtual assistant for a smart classroom gave me a sense of achievement as I saw AI applied in a practical scenario.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What are the key concepts or skills you have learned so far in this first week?</h4>
-  		<p class="max-w-6xl pl-8 text-lg">I learned how neural networks simulate the structure of the human brain, processing information through layers of interconnected nodes. I explored how AI models detect fake news by recognizing patterns in text data. The unplugged activities supported my understanding of core AI principles like pattern recognition and decision-making without needing a computer. I gained hands-on experience building AI projects with Machine Learning for Kids, including creating a virtual assistant capable of controlling devices in a virtual environment.</p>
-  		<h4 class="pl-8 p-4 font-medium text-lg">What progress have you made toward your learning goals or project milestones?</h4>
-  		<p class="max-w-6xl pl-8 text-lg">I completed the neural network lessons and successfully built a fake news classifier, applying theory to a real-world problem. Developing a virtual assistant project marked significant progress in integrating different AI tools and skills. Exploring Experience AI lessons enhanced my understanding of AI’s broader impacts beyond technology. Debating about the use of smart home appliances also concretized some of the other learning concepts of ML machines, so that helped to better understand it.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What challenges or problems have you faced during your learning, and how did you attempt to solve them?</h4>
-      <p class="max-w-6xl pl-8 text-lg">Neural networks were initially difficult to comprehend due to their abstract nature, but reviewing course videos and analogies helped me. I also liked the black and white pixel analogy and learning example, probably because it is easily recognizable in patterns. I also thought about the precision of recognition in autonomous cars and it made me realize, that the ethics are still a bit weak behind ML and that I want to have a more thorough look on it in some other way (course or materials).</p>
-      <h2 id = "analyzing-data-with-excel" class="font-bold pl-8 p-5">Analyzing Data with Excel</h2>
-      <h3 id= "analyzing-data-with-excel-week-5" class="pl-8 p-4 font-bold text-xl">Week 5</h3>
-      <h4 class="pl-8 p-4 font-medium text-lg">What emotions or feelings have you experienced during your studies this week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I felt both curious and slightly overwhelmed as I began navigating the Excel interface and learning about spreadsheet fundamentals. At times, I experienced relief when I realized that many of the basic concepts were more intuitive than I had anticipated. The hands-on practice with the ribbon and worksheet navigation gave me confidence, and completing the practice quiz reinforced that I was grasping the core concepts. Overall, I felt motivated to continue building my Excel skills for data analysis tasks.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What are the key concepts or skills you have learned so far in this first week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">I learned about the fundamental structure of spreadsheets and why Excel is one of the most widely used and feature-rich applications for data analysis. I discovered the advantages spreadsheets offer over manual calculation methods, including organization, accessibility, and efficiency. I gained familiarity with the main elements of an Excel workbook, such as worksheets, cells, columns, and rows. What was the most apprectiated from this intro module was a table of handy keyboard shortcuts, that saved me a ton of scrolling already.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What progress have you made toward your learning goals or project milestones?</h4>
-      <p class="max-w-6xl pl-8 text-lg">I successfully completed the introductory module and familiarized myself with the Excel interface, including the ribbon's tabs and groups. I practiced basic navigation techniques and completed a practice quiz covering fundamental Excel operations, which helped my understanding. This foundational knowledge has prepared me to move forward with more advanced data analysis techniques in the coming weeks. I feel comfortable using the shortcuts and overall just roam around the excel with ease.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What challenges or problems have you faced during your learning, and how did you attempt to solve them?</h4>
-      <p class="max-w-6xl pl-8 text-lg">Since this was an introductory module designed to help me get a hang of things, I didn't face any significant challenges this week. The material was straightforward and served as a gentle introduction to the Excel environment. The practice quiz was manageable and helped me confirm that I understood the basic concepts. Looking forward to getting into the main frame/scope of this course.</p>
-      <h3 id= "analyzing-data-with-excel-week-6" class="pl-8 p-4 font-bold text-xl">Week 6</h3>
-      <h4 class="pl-8 p-4 font-medium text-lg">What emotions or feelings have you experienced during your studies this week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I felt positive and encouraged as I built upon the foundations learned in the first module. Unlike the previous week, my experience with Excel tasks was smooth and rewarding. Learning essential spreadsheet operations and understanding formulas gave me confidence and a sense of progress.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What are the key concepts or skills you have learned so far in this first week?</h4>
-  		<p class="max-w-6xl pl-8 text-lg">I learned fundamental spreadsheet tasks such as entering, editing, moving, copying, and filling data efficiently. I developed an understanding of formulas and common functions used in data analysis. A key takeaway was mastering cell referencing in formulas, including the difference between relative referencing, which adjusts when copied across cells, and absolute referencing, which keeps a fixed reference using the $ symbol. This knowledge allows me to create dynamic formulas adaptable to various data scenarios.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What progress have you made toward your learning goals or project milestones?</h4>
-      <p class="max-w-6xl pl-8 text-lg">I completed all module exercises and quizzes, strengthening my practical skills in data manipulation and analysis in Excel. Understanding relative and absolute references significantly improved my ability to build flexible and powerful formulas, preparing me well for advanced topics later in the course.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What challenges or problems have you faced during your learning, and how did you attempt to solve them?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I did not face significant challenges or frustrations. The course material was clear and approachable, allowing me to grasp key concepts like cell referencing on the first attempt. This positive experience contrasts with my earlier frustration in the introductory module and motivates me to continue advancing confidently. I also found a utility, that translates formulas, which is super useful, since I need to swap between English and Czech (for anyone interested its <a href = "https://en.excel-translator.de/translator/">here</a>, lifechanging!).</p>
-      <h3 id= "analyzing-data-with-excel-week-7" class="pl-8 p-4 font-bold text-xl">Week 7</h3>
-      <h4 class="pl-8 p-4 font-medium text-lg">What emotions or feelings have you experienced during your studies this week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I felt calm and focused as I progressed through the course material at a steadier pace. Having more time available made a difference in how I absorbed the concepts, and I felt genuinely happy to dive into topics like GDPR and data privacy fundamentals (crazy I know). To adress the feedback from my tutor, I think that the change was mainly caused by having more time too. Learning about importing data from different file formats was kind of satisfying, as it felt like gaining practical skills I could apply in real world scenarios. Overall, this week had a pleasant rhythm to it, and I appreciated the balance between theoretical knowledge (in form of videos) and hands-on practice (in the excel labs).</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What are the key concepts or skills you have learned so far in this first week?</h4>
-  		<p class="max-w-6xl pl-8 text-lg">I learned about the five traits of data quality (accuracy, completeness, reliability, relevance, and timeliness) which helped me understand what makes data trustworthy and useful for analysis. I gained practical experience with the Text Import Wizard, discovering how to bring data into Excel from various formats like plain text and CSV files, which expands the possibilities for working with diverse data sources. The three fundamentals of data privacy (confidentiality, collection and use, and compliance) deepened my awareness of ethical data handling, particularly regarding GDPR regulations and how they protect individuals' information, all three kinds (personal, personaly identifiable, and sensitive personal).</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What progress have you made toward your learning goals or project milestones?</h4>
-      <p class="max-w-6xl pl-8 text-lg">I successfully completed all exercises related to data quality assessment and data importing, which helped both my technical Excel skills and my understanding of data governance principles. The hands-on practice with importing different file formats helped with handling real-world data scenarios. My knowledge of GDPR and privacy compliance has grown significantly, making me more mindful of the legal and ethical dimensions of working with data in professional contexts.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What challenges or problems have you faced during your learning, and how did you attempt to solve them?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week was relatively smooth, with no major challenges or frustrations. The additional time I had available allowed me to work through the material and do the labs with some time to spare. Even though it was more peaceful, I am still looking forward to reading week and some earned free time.</p>
-      <h3 id= "analyzing-data-with-excel-week-8" class="pl-8 p-4 font-bold text-xl">Week 8</h3>
-      <h4 class="pl-8 p-4 font-medium text-lg">Reading week!</h4>
-      <h3 id= "analyzing-data-with-excel-week-9" class="pl-8 p-4 font-bold text-xl">Week 9</h3>
-      <h4 class="pl-8 p-4 font-medium text-lg">What emotions or feelings have you experienced during your studies this week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I felt like I was learning something very useful and I was focused on my work when I was learning about how to clean data, how to deal with copies of data, wrong data and empty rows. I liked how useful this module was. I felt excited to learn these skills because they are directly related to the work of analysing data and they helped me even in my practice when dealing with a lot of unclean data.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What are the key concepts or skills you have learned so far in this first week?</h4>
-  		<p class="max-w-6xl pl-8 text-lg">I learned how important it is to have accurate data and how to spot and delete duplicate or inaccurate data and empty rows from datasets. I found a few ways to fix data problems, like changing the text's case, fixing date formats, and removing extra spaces. I also learned how to use Excel's Flash Fill and Text to Columns features, which make it easier to standardise data. And I practiced how to use functions to change and make data consistent (mostly with UPPER, LOWER and PROPER, but with date formats too) in on-hands lab.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What progress have you made toward your learning goals or project milestones?</h4>
-      <p class="max-w-6xl pl-8 text-lg">I did all the exercises and quizzes on data cleaning techniques. I now have the skills to prepare datasets properly before analysing the data. This basic work on data quality improves my overall data analyst skills and prepares me for more advanced analytical tasks in later modules (which I'm very much looking forward to).</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What challenges or problems have you faced during your learning, and how did you attempt to solve them?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week was difficult because I had to work on a new website design at the same time (deadline is coming up :)). I found it hard to balance the demands of this course with design work because it meant I had less time for studying. But I still managed to work through the course material, focusing on the module exercises when I could and adjusting my learning pace to fit in with both commitments.</p>
-      <h3 id= "analyzing-data-with-excel-week-10" class="pl-8 p-4 font-bold text-xl">Week 10</h3>
-      <h4 class="pl-8 p-4 font-medium text-lg">What emotions or feelings have you experienced during your studies this week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I felt good and in control as I learned about how to sort and organise data in Excel. It was really satisfying to see how these techniques make data analysis much easier and faster. I enjoyed using functions like VLOOKUP and COUNTIF because they felt practical and useful. Learning about table formatting was really satisfying because I could immediately see how it improves how data is managed. I felt motivated because I could use these skills to work with real data.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What are the key concepts or skills you have learned so far in this first week?</h4>
-  		<p class="max-w-6xl pl-8 text-lg">I learned to plan before shaping data by thinking about how big the data set is, what filtering is needed, how to sort it, and what calculations to use. I discovered that formatting data as tables in Excel has many benefits, like automatic calculations, fixed column headings, easier reading with banded rows, and automatic expansion. I practised sorting data into groups based on numbers, letters, and time. I also practised filtering to show or hide specific information. I also learned about different categories of Excel functions and practised using important ones like IF, IFS, COUNTIF, SUMIF, VLOOKUP and HLOOKUP.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What progress have you made toward your learning goals or project milestones?</h4>
-      <p class="max-w-6xl pl-8 text-lg">I did all the exercises on sorting, filtering, and using Excel functions. The hands-on lab practice helped me understand how to work with data more efficiently. I now plan more carefully for data preparation, thinking about what I need to do before getting started.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What challenges or problems have you faced during your learning, and how did you attempt to solve them?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week was difficult because I had other things to do as well as the course work. I struggled to manage my time between all my different commitments. In the end I found some time in the evening before the reflection was due this week, so at least I stayed on the task and in the scope of the deadline.</p>
-      <h3 id= "analyzing-data-with-excel-week-11" class="pl-8 p-4 font-bold text-xl">Week 11</h3>
-      <h4 class="pl-8 p-4 font-medium text-lg">What emotions or feelings have you experienced during your studies this week?</h4>
-      <p class="max-w-6xl pl-8 text-lg">This week, I felt interested and excited as I learned about pivot tables for the first time. I felt like I had done something good when I made my first pivot table and saw how it could quickly show a lot of information. I was excited because pivot tables are something I've often heard about when it comes to data analysis, so finally learning them felt like reaching an important milestone. I really enjoyed working with slicers and timelines. These visual tools made filtering feel easy and interactive. I enjoyed this week because the content felt practical and I could use it to analyse real data in a more professional matter. To adress the rest conundrum from rest week, I feel like I won't use these terms very often, because as you mention the mental behind that isn't quite right. But this year was very hectic around work too and I was able to get away to Sardegna to rock climb, so that was kind of a big relief that all of the planning and traveling will come to fruition.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What are the key concepts or skills you have learned so far in this first week?</h4>
-  		<p class="max-w-6xl pl-8 text-lg">I learned that pivot tables are an essential tool for summarising, analysing and finding patterns in data quickly and easily. I found out that pivot tables update automatically when the original data changes, which makes them useful for ongoing analysis. I practised getting data ready for pivot tables by making sure the formatting was correct, removing any blank rows or columns, checking that the column headings were right, and making sure the values and dates were formatted properly. I learnt how to use the Pivot Table Fields pane to arrange data and explored the Recommended Pivot Tables to see how they can suggest data combinations. I also learned about slicers and timelines, which are graphical filtering tools that make it easier to filter pivot table data using buttons rather than traditional dropdown menus. Thank you for the question about the ethics, it really made me stop and think about these differences. You're right, I do sometimes miss the deeper reflection from the AI course. The Excel course is fun because I can immediately use what I learn in my work, but the ethical layer is less present. That said, I don't think Excel is ethically neutral at all. Microsoft as a big corporation enforces its tools and workflows, squeezing out smaller companies and alternatives. When one company's software becomes the standard, it shapes how entire industries think about data, what counts as "professional," and what skills matter. The ethics happen quietly. The tool itself carries assumptions about standardization and corporate structure.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What progress have you made toward your learning goals or project milestones?</h4>
-      <p class="max-w-6xl pl-8 text-lg">I did all the exercises on creating and arranging pivot tables. I understood how important it is to get your data ready for analysis when I did the pivot table checklist. I practised using timelines, which improved my skills in making interactive and easy-to-use data presentations. This week I have learnt more about Excel's advanced features, which will help me with more complex data analysis projects.</p>
-      <h4 class="pl-8 p-4 font-medium text-lg">What challenges or problems have you faced during your learning, and how did you attempt to solve them?</h4>
-      <p class="max-w-6xl pl-8 text-lg">Firstly, maybe I will adress the time management feedback from my tutor. I feel like because I have a lot of different assignments, that I can manage with not that much difficulty and like doing, the worst part really is overall in my time management. I am trying to adjust it by implementing some digital wellbeing tasks and apps and get back to paper diary for next year. This week I had some problems practicing filtering in pivot tables and getting the selection set up correctly, which took more time than I expected. I found the process entertaining because I had never used pivot tables before and was excited to learn. I did the exercises over and over until I got the filtering logic, and the hands-on practice helped me understand how slicers and filters work with data.</p>
-      <img class="pl-8 p-6"src="/img/ISKM61.jpg" alt="ISKM61"/>
+
+      <!-- Course Basics -->
+      <section class="pl-8 mb-12">
+        <h1 class="mx-auto flex text-6xl p-6 mb-4">ISKM101: Digitální wellbeing a kreativita</h1>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 bg-charcoal/50 p-6 rounded-xl border border-greenels">
+          <div>
+            <h3 class="font-bold text-xl mb-2">Kredity</h3>
+            <p class="text-lg">3 kredity</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl mb-2">Anotace</h3>
+            <p class="text-lg">Rozvoj digitálního wellbeingu pomocí kreativních a designových přístupů. Sebezkušenostní učení.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl mb-2">Vyučující</h3>
+            <p class="text-lg">doc. RNDr. Michal Černý, Ph.D.; Bc. Daniela Ryšavá</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl mb-2">Celkové hodnocení</h3>
+            <div class="flex items-center space-x-2">
+              <span class="text-3xl">⭐⭐⭐⭐⭐</span>
+              <span class="text-lg">(5/5)</span>
+            </div>
+            <p class="text-sm mt-1">Kreativní metody + Figma artefakt</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- What? Section -->
+      <section id="what-section" class="pl-8 mb-12">
+        <h2 class="font-bold pl-8 p-5 text-3xl border-l-4 border-greenels">What? (Co?)</h2>
         
+        <h3 id="what-learned" class="pl-8 p-4 font-bold text-xl mb-4" style="color: var(--color-greenels);">Co jsem se naučil?</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Kurz mi ukázal propojení digitálního wellbeingu s kreativními metodami. Naučil jsem se organizovat pracovní procesy s ohledem na digitální rovnováhu. Zvládl jsem základy Figma pro tvorbu praktických artefaktů. Skupinové rozhovory odhalily různé metody a principy při nahlížení na konkrétní problematiky. Návštěva výstavy v Pitevně (LF MU) byla netradiční a velmi vítanou formou učení. Koláže pomohly vizualizovat mé digitální návyky.</p>
+
+        <h3 id="what-experience" class="pl-8 p-4 font-bold text-xl mb-4">Co pro mě byla pozitivní/negativní zkušenost?</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Netradiční prostředí v Pitevně podnítilo kreativitu a reflexi. Tvorba Figma mockupu pro fidgetování/single source of truth byla skvělá a pomohla mi naučit se industry standard navrhování. Dodnes ho aktivně používám při přemýšlení. Práce na MIRO platformě byla intuitivní a funkční. Různorodost metod udržela motivaci a soustředěnost.</p>
+
+        <h3 id="what-satisfaction" class="pl-8 p-4 font-bold text-xl mb-4">Co mi kurz přinesl za uspokojení/ocenění?</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Největší radost jsem měl z funkčního Figma mockupu. Prakticky ho využívám při kódování a psaní. Spokojenost mi dalo pochopení svých digitálních návyků. Koláže ukázaly jinou stránku přemýšlení nad mými digitálními návyky. Zpětná vazba od spolužáků potvrdila efektivitu mého přístupu. Udělal jsem i první reálné kroky k lepší digitální rovnováze.</p>
+
+        <h3 id="what-appreciation" class="pl-8 p-4 font-bold text-xl mb-4">Co bych na kurzu ocenil?</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Ocenil bych více technických workshopů (nejen tužka a papír ale pracovat i třeba přímo v Miro v rámci hodiny). Více času na individuální reflexi artefaktů by možná pomohlo vzít si z jednotlivých výstupů víc. Praktické ukázky využití některých digitálních nástrojů by možná některé mohly více inspirovat k jejich využití.</p>
+
+        <h3 id="what-core" class="pl-8 p-4 font-bold text-xl mb-4">Jádrový přínos pro sebe</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Figma mockup se stal mým běžným nástrojem. Naučil jsem se propojovat kreativitu s produktivitou a zvědomovat si svůj čas strávený na technologiích. Digitální návyky nyní umím lépe řídit. Zkušenost obohatila můj přístup k designování a balancování projektů.</p>
+      </section>
+
+      <!-- So What? Section -->
+      <section id="so-what-section" class="pl-8 mb-12">
+        <h2 class="font-bold pl-8 p-5 text-3xl border-l-4 border-greenels">So What? (Tak co?)</h2>
+        
+        <h3 id="so-what-practice" class="pl-8 p-4 font-bold text-xl mb-4">Pro moji praxi a expertízu</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Digitální wellbeing zlepší mou dlouhodobou produktivitu v kódování. Figma dovednosti obohatí různé dev projekty. Kreativní metody pomohou při UX designu projektů.</p>
+
+        <h3 id="so-what-carry" class="pl-8 p-4 font-bold text-xl mb-4">Do praxe odnáším</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Odnáším si Figma workflow pro rychlé prototypování. Naučil jsem se time-boxing techniku pro kódování. Budu aktivněji využívat kreativní koláže pro vizualizaci problémů. Digitální pauzy pravidelně naplánuji. Budu se snažit plánovat aktivní propojování kreativity a produktivity.</p>
+
+        <h3 id="so-what-change-self" class="pl-8 p-4 font-bold text-xl mb-4">Co jsem na sobě změnil</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Začal jsem pravidelně používat konečný artefakt pro relaxaci. Time-boxing nahradil nekonečné a často ke konci neproduktivní sessiony. Vizuální reflexe odhalila další pohled na mé digitální návyky. Kreativita se stala součástí workflow a s ní roste při lepší rovnováze i produktivita.</p>
+
+        <h3 id="so-what-methods" class="pl-8 p-4 font-bold text-xl mb-4">Metody učení/pracování se sebou</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Objevil jsem sílu sebezkušenostního učení. MIRO platforma zefektivnila práci na domácích úkolech. Koláže a vizuální reflexe zlepšily pochopení. Skupinové rozhovory inspirovaly praktické řešení.</p>
+      </section>
+
+      <!-- Now What? Section -->
+      <section id="now-what-section" class="pl-8 mb-12">
+        <h2 class="font-bold pl-8 p-5 text-3xl border-l-4 border-greenels">Now What? (A teď co?)</h2>
+        
+        <h3 id="now-what-improve" class="pl-8 p-4 font-bold text-xl mb-4">Jak se zlepšit</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Prohloubím Figma znalosti pro komplexnější designy. Naučím se pracovat s pokročilejšími time management aplikacemi a papírovým diářem. Budu experimentovat jednou za čas i s dalšími kreativními metodami. Integruji principy do pracovního workflow.</p>
+
+        <h3 id="now-what-permanent" class="pl-8 p-4 font-bold text-xl mb-4">Trvalé změny</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Figma fidget tool udržuji jako přemýšlecí rituál. Time-boxing se budu snažit aplikovat i na další projekty. Zkusím si naplánovat reflexi svých digitálních návyků. Wellbeing bude součástí produktivity.</p>
+
+        <h3 id="now-what-work" class="pl-8 p-4 font-bold text-xl mb-4">Jak dále pracovat</h3>
+        <p class="max-w-6xl pl-8 text-lg mb-6">Propojím digitální wellbeing s dalšími projekty. Budu experimentovat s kreativními pauzami i v týmu. Wellbeingové principy aplikuji i na pracovní a další projekty.</p>
+
+        <h3 id="now-what-actions" class="pl-8 p-4 font-bold text-xl mb-4">Konkrétní akce</h3>
+        <ul class="max-w-6xl pl-8 text-lg space-y-2 list-disc list-inside">
+          <li>Do března 2026 vytvořit digitální wellbeing dashboard ve Figmě</li>
+          <li>Implementovat time-boxing do pracovních workflow</li>
+          <li>Měsíční reflexe digitálních návyků</li>
+        </ul>
+      </section>
     </main>
   </body>
 </Layout>
